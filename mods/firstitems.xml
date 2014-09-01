@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mod name="First Items" enabled="yes">
+	<config name="firstitems_config"><![CDATA[
+		STORAGE = 30001
+		commonItems = {
+			{itemid=2160, count=2, inContainer = true}, -- 2 platinum coins
+			{itemid=2554, count=1, inContainer = true}, -- SHOVEL
+			{itemid=2120, count=1, inContainer = true}, --ROPE
+			{itemid=2643}, -- leather boots
+			{itemid=2173} -- aol
+		}
+		firstItems = {
+			{ -- Sorcerer	
+				{itemid=15645}, -- backpack
+				{itemid=2175}, -- spellbook
+				{itemid=2190}, -- wand of vortex
+				{itemid=8819}, -- magician's robe
+				{itemid=8820}, -- mage hat
+				{itemid=2648} -- chain legs
+			},
+			{ -- Druid
+				{itemid=15645}, -- backpack
+				{itemid=2175}, -- spellbook
+				{itemid=2182}, -- snakebite rod
+				{itemid=8819}, -- magician's robe
+				{itemid=8820}, -- mage hat
+				{itemid=2648} -- chain legs
+			},
+			{ -- Paladin
+				{itemid=15645}, -- backpack
+				{itemid=2525}, -- dwarven shield
+				{itemid=2389, count=5}, -- 1 spears
+				{itemid=2463}, -- plate armor
+				{itemid=2457}, -- steel helmet
+				{itemid=2647} -- plate legs
+			},
+			{ -- Knight
+				{itemid=15645}, -- backpack
+				{itemid=2525}, -- dwarven shield
+				{itemid=2383}, -- spike sword
+				{itemid=2463}, -- plate armor
+				{itemid=2457}, -- steel helmet
+				{itemid=2647}, -- plate legs 
+				{itemid=2394}, -- Mornig Star
+				{itemid=2428} -- axe
+			}
+		}
+	]]></config>
+	<event type="login" name="FirstItems" event="script"><![CDATA[
+		domodlib('firstitems_config')
+ 
+		for _, items in ipairs(firstItems) do
+			for _, item in ipairs(commonItems) do
+				table.insert(items, item)
+			end
+		end
+ 
+		function onLogin(cid)
+			if getPlayerGroupId(cid) < 4 and getPlayerStorageValue(cid, STORAGE) < 1 and firstItems[getPlayerVocation(cid)] then
+				for _, v in ipairs(firstItems[getPlayerVocation(cid)]) do
+					if isItemContainer(v.itemid) then
+						backpack = doPlayerAddItem(cid, v.itemid, 1)
+					elseif v.inContainer then
+						doAddContainerItem(backpack, v.itemid, v.count or 1)
+					else
+						doPlayerAddItem(cid, v.itemid, v.count or 1)
+					end
+				end
+				setPlayerStorageValue(cid, STORAGE, 1)
+			end
+			return true
+		end
+	]]></event>
+</mod>

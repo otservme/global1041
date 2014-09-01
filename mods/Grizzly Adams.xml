@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<mod name="Grizzly Adams" version="2.0" author="Oskar" contact="http://tibia.net.pl/members/oskar.html" enabled="yes"> 
+<config name="grizzlyAdams_conf"><![CDATA[ 
+task = { 
+                --6-49-- 
+                ['crocodile'] = {storage = 9999, beginStorageValue = 1, finishStorageValue = 2, count = 300}, 
+                ['tarantula'] = {storage = 9998, beginStorageValue = 3, finishStorageValue = 4, count = 300}, 
+                ['badger'] = {storage = 9997, beginStorageValue = 5, finishStorageValue = 6, points = 1, count = 300}, 
+                ['carniphila'] = {storage = 9996, beginStorageValue = 7, finishStorageValue = 8, count = 150}, 
+                ['stone golem'] = {storage = 9995, beginStorageValue = 9, finishStorageValue = 10, points = 1, count = 200}, 
+                ['mammoth'] = {storage = 9994, beginStorageValue = 11, finishStorageValue = 12, count = 300}, 
+                ['gnarlhound'] = {storage = 9993, beginStorageValue = 13, finishStorageValue = 14, points = 2, count = 300}, 
+                ['ape'] = {monsterTypes = {['kongra']=9953,['merklin']=9952,['sibang']=9951}, beginStorageValue = 15, finishStorageValue = 16, points = 2, count = 300}, 
+                ['terramite'] = {storage = 9991, beginStorageValue = 17, finishStorageValue = 18, points = 2, count = 300},
+                ['thornback tortoise'] = {storage = 9990, beginStorageValue = 19, finishStorageValue = 20, points = 2, count = 300}, 
+                ['gargoyle'] = {storage = 9989, beginStorageValue = 21, finishStorageValue = 22, points = 2, count = 200}, 
+                                     
+                --level 50-79--  
+                ['ice golem'] = {storage = 9988, beginStorageValue = 23, finishStorageValue = 24, count = 300}, 
+                ['quara scouts'] = {monsterTypes = {['quara predator scout']=9950,['quara pincher scout']=9949,['quara mantassin scout']=9948,['quara constrictor scout']=9947,['quara hydromancer scout']=9946}, beginStorageValue = 25, finishStorageValue = 26, points = 2, count = 400}, 
+                ['mutated rat'] = {storage = 9986, beginStorageValue = 27, finishStorageValue = 28, count = 400}, 
+                ['crystal spider'] = {storage = 9985, beginStorageValue = 29, finishStorageValue = 30, count = 300}, 
+                ['ancient scarab'] = {storage = 9984, beginStorageValue = 31, finishStorageValue = 32, count = 250}, 
+                ['wyvern'] = {storage = 9983, beginStorageValue = 33, finishStorageValue = 34, points = 2, count = 300}, 
+                ['lancer beetle'] = {storage = 9982, beginStorageValue = 35, finishStorageValue = 36, points = 2, count = 300}, 
+                ['mutated tiger'] = {storage = 9981, beginStorageValue = 37, finishStorageValue = 38, points = 2, count = 250}, 
+                ['wailing widow'] = {storage = 9980, beginStorageValue = 39, finishStorageValue = 40, points = 3, count = 400}, 
+                ['killer caiman'] = {storage = 9979, beginStorageValue = 41, finishStorageValue = 42, points = 3, count = 250}, 
+                ['bonebeast'] = {storage = 9978, beginStorageValue = 43, finishStorageValue = 44, count = 300}, 
+                                     
+                --level 80-129-- 
+                ['giant spider'] = {storage = 9977, beginStorageValue = 45, finishStorageValue = 46, count = 500}, 
+                ['quaras'] = {monsterTypes = {['quara predator']=9945,['quara pincher']=9944,['quara mantassin']=9943,['quara constrictor']=9942,['quara hydromancer']=9941}, beginStorageValue = 47, finishStorageValue = 48, count = 600}, 
+                ['werewolf'] = {storage = 9975, beginStorageValue = 49, finishStorageValue = 50, points = 4, count = 300}, 
+                ['nightmare'] = {storage = 9974, beginStorageValue = 51, finishStorageValue = 520, points = 4, count = 400}, 
+                ['hellspawn'] = {storage = 9973, beginStorageValue = 53, finishStorageValue = 54, count = 600}, 
+                ['high class lizards'] = {monsterTypes = {['lizard zaogun']=9940,['lizard noble']=9939,['lizard magistratus']=9938,['lizard legionnaire']=9937,['lizard high guard']=9936,['lizard dragon priest']=9935,['lizard chosen']=9934}, beginStorageValue = 55, finishStorageValue = 56, points = 4, count = 800}, 
+                ['brimstone bug'] = {storage = 9971, beginStorageValue = 57, finishStorageValue = 58, count = 500}, 
+                ['mutated bat'] = {storage = 9970, beginStorageValue = 59, finishStorageValue = 60, points = 4, count = 400}, 
+                                             
+                --level 130+ --  
+                ['hydra'] = {storage = 9969, beginStorageValue = 61, finishStorageValue = 62, count = 650}, 
+                ['sea serpent'] = {monsterTypes = {['sea serpent']=9933,['young sea serpent']=9932}, beginStorageValue = 63, finishStorageValue = 64, count = 900}, 
+                ['behemoth'] = {storage = 9967, beginStorageValue = 65, finishStorageValue = 66, count = 700}, 
+                ['serpent spawn'] = {storage = 9966, beginStorageValue = 67, finishStorageValue = 68, count = 800}, 
+                ['medusa'] = {storage = 9965, beginStorageValue = 69, finishStorageValue = 70, count = 500}, 
+                ['hellhound'] = {storage = 9964, beginStorageValue = 71, finishStorageValue = 72, count = 250}, 
+                ['ghastly dragon'] = {storage = 9963, beginStorageValue = 73, finishStorageValue = 74, count = 500}, 
+                ['drakens'] = {monsterTypes = {['draken elite']=9931,['draken spellweaver']=9930,['draken abomination']=9929,['draken warmaster']=9928}, beginStorageValue = 75, finishStorageValue = 76, points = 4, count = 900}, 
+                ['destroyer'] = {storage = 9961, beginStorageValue = 77, finishStorageValue = 78, points = 4, count = 650},
+                ['undead dragon'] = {storage = 9960, beginStorageValue = 79, finishStorageValue = 80, points = 6, count = 400}, 
+                ['demon'] = {storage = 9959, beginStorageValue = 81, finishStorageValue = 82, count = 6666} 
+                } 
+specialTask = { 
+                    --special tasks 
+                    ['demodras'] = {storage = 10006, beginBossStorageValue = 0, finishedBossStorageValue = 1,
+                                    [5300] = {effect = CONST_ME_FIREATTACK, centerRoomPosition = {x=1000,y=1000,z=7}, 
+                                             bossSummonPlace = {x=1000,y=1000,z=7}, bossEffect = CONST_ME_FIREATTACK, 
+                                             sizeRoom = {5,5}}}, 
+                    ['tiquandas revenge'] = {storage = 10005, beginBossStorageValue = 0, finishedBossStorageValue = 1,
+                                    [5301] = {effect = CONST_ME_PLANTATTACK, centerRoomPosition = {x=1000,y=1000,z=7}, 
+                                             bossSummonPlace = {x=1000,y=1000,z=7}, bossEffect = CONST_ME_PLANTATTACK, 
+                                             sizeRoom = {5,5}}}, 
+                    --bosses 
+                    ['the snapper'] = {beginBossStorageValue = 1, finishedBossStorageValue = 2, points = 1,
+                                    [5302] = {effect = CONST_ME_CARNIPHILA, centerRoomPosition = {x=1000,y=1000,z=7}, 
+                                             bossSummonPlace = {x=1000,y=1000,z=7}, bossEffect = CONST_ME_CARNIPHILA, 
+                                             sizeRoom = {5,5}}}, 
+                    ['hide'] = {beginBossStorageValue = 3, finishedBossStorageValue = 4, points = 1,
+                                    [5303] = {effect = CONST_ME_STONES, centerRoomPosition = {x=1000,y=1000,z=7}, 
+                                             bossSummonPlace = {x=1000,y=1000,z=7}, bossEffect = CONST_ME_STONES, 
+                                             sizeRoom = {5,5}}}, 
+                    ['deathbine'] = {beginBossStorageValue = 5, finishedBossStorageValue = 6, points = 1,
+                                    [5304] = {effect = CONST_ME_CARNIPHILA, centerRoomPosition = {x=1000,y=1000,z=7}, 
+                                             bossSummonPlace = {x=1000,y=1000,z=7}, bossEffect = CONST_ME_CARNIPHILA, 
+                                             sizeRoom = {5,5}}}, 
+                    ['the bloodtusk'] = {beginBossStorageValue = 7, finishedBossStorageValue = 8, points = 2,
+                                    [5305] = {effect = CONST_ME_ICEAREA, centerRoomPosition = {x=1000,y=1000,z=7}, 
+                                             bossSummonPlace = {x=1000,y=1000,z=7}, bossEffect = CONST_ME_ICEAREA, 
+                                             sizeRoom = {5,5}}}, 
+                    ['shardhead'] = {beginBossStorageValue = 9, finishedBossStorageValue = 10, points = 2,
+                                    [5306] = {effect = CONST_ME_ICEATTACK, centerRoomPosition = {x=1000,y=1000,z=7}, 
+                                             bossSummonPlace = {x=1000,y=1000,z=7}, bossEffect = CONST_ME_ICEATTACK, 
+                                             sizeRoom = {5,5}}}, 
+                    ['esmeralda'] = {beginBossStorageValue = 11, finishedBossStorageValue = 12, points = 2,
+                                    [5307] = {effect = CONST_ME_HITBYPOISON, centerRoomPosition = {x=1000,y=1000,z=7}, 
+                                             bossSummonPlace = {x=1000,y=1000,z=7}, bossEffect = CONST_ME_HITBYPOISON, 
+                                             sizeRoom = {5,5}}}, 
+                    ['bloodweb'] = {beginBossStorageValue = 13, finishedBossStorageValue = 14, points = 3,
+                                    [5308] = {effect = CONST_ME_ICEATTACK, centerRoomPosition = {x=1000,y=1000,z=7}, 
+                                             bossSummonPlace = {x=1000,y=1000,z=7}, bossEffect = CONST_ME_ICEATTACK, 
+                                             sizeRoom = {5,5}}}, 
+                    ['fleshcrawler'] = {beginBossStorageValue = 15, finishedBossStorageValue = 16, points = 2,
+                                    [5309] = {effect = CONST_ME_SMALLPLANTS, centerRoomPosition = {x=1000,y=1000,z=7}, 
+                                             bossSummonPlace = {x=1000,y=1000,z=7}, bossEffect = CONST_ME_SMALLPLANTS, 
+                                             sizeRoom = {5,5}}}, 
+                    ['ribstride'] = {beginBossStorageValue = 17, finishedBossStorageValue = 18, points = 3,
+                                    [5310] = {effect = CONST_ME_SMALLCLOUDS, centerRoomPosition = {x=1000,y=1000,z=7}, 
+                                             bossSummonPlace = {x=1000,y=1000,z=7}, bossEffect = CONST_ME_SMALLCLOUDS, 
+                                             sizeRoom = {5,5}}}, 
+                    ['the old widow'] = {beginBossStorageValue = 19, finishedBossStorageValue = 20, points = 3,
+                                    [5311] = {effect = CONST_ME_SMALLPLANTS, centerRoomPosition = {x=1000,y=1000,z=7}, 
+                                             bossSummonPlace = {x=1000,y=1000,z=7}, bossEffect = CONST_ME_SMALLPLANTS, 
+                                             sizeRoom = {5,5}}}, 
+                    ['thul'] = {beginBossStorageValue = 21, finishedBossStorageValue = 22, points = 3,
+                                    [5312] = {effect = CONST_ME_WATERSPLASH, centerRoomPosition = {x=1000,y=1000,z=7}, 
+                                             bossSummonPlace = {x=1000,y=1000,z=7}, bossEffect = CONST_ME_WATERSPLASH, 
+                                             sizeRoom = {5,5}}}, 
+                    ['flameborn'] = {beginBossStorageValue = 23, finishedBossStorageValue = 24, points = 3,
+                                    [5313] = {effect = CONST_ME_HITBYFIRE, centerRoomPosition = {x=1000,y=1000,z=7}, 
+                                             bossSummonPlace = {x=1000,y=1000,z=7}, bossEffect = CONST_ME_HITBYFIRE, 
+                                             sizeRoom = {5,5}}}, 
+                    ['sulphur scuttler'] = {beginBossStorageValue = 25, finishedBossStorageValue = 26, points = 3,
+                                    [5314] = {effect = CONST_ME_SMALLPLANTS, centerRoomPosition = {x=1000,y=1000,z=7}, 
+                                             bossSummonPlace = {x=1000,y=1000,z=7}, bossEffect = CONST_ME_SMALLPLANTS, 
+                                             sizeRoom = {5,5}}}, 
+                    ['the many'] = {beginBossStorageValue = 27, finishedBossStorageValue = 28, points = 3, 
+                                    [5315] = {effect = CONST_ME_SMALLPLANTS, centerRoomPosition = {x=1000,y=1000,z=7}, 
+                                             bossSummonPlace = {x=1000,y=1000,z=7}, bossEffect = CONST_ME_SMALLPLANTS, 
+                                             sizeRoom = {5,5}}}, 
+                    ['leviathan'] = {beginBossStorageValue = 29, finishedBossStorageValue = 30, points = 4, 
+                                    [5316] = {effect = CONST_ME_ICEATTACK, centerRoomPosition = {x=1000,y=1000,z=7}, 
+                                             bossSummonPlace = {x=1000,y=1000,z=7}, bossEffect = CONST_ME_ICEATTACK, 
+                                             sizeRoom = {5,5}}}, 
+                    ['stonecracker'] = {beginBossStorageValue = 31, finishedBossStorageValue = 32, points = 4, 
+                                    [5317] = {effect = CONST_ME_POFF, centerRoomPosition = {x=1000,y=1000,z=7}, 
+                                             bossSummonPlace = {x=1000,y=1000,z=7}, bossEffect = CONST_ME_POFF, 
+                                             sizeRoom = {5,5}}}, 
+                    ['the noxious spawn'] = {beginBossStorageValue = 33, finishedBossStorageValue = 34, points = 4, 
+                                    [5318] = {effect = CONST_ME_YELLOW_RINGS, centerRoomPosition = {x=1000,y=1000,z=7}, 
+                                             bossSummonPlace = {x=1000,y=1000,z=7}, bossEffect = CONST_ME_YELLOW_RINGS, 
+                                             sizeRoom = {5,5}}}, 
+                    ['gorgo'] = {beginBossStorageValue = 35, finishedBossStorageValue = 36, points = 4, 
+                                    [5319] = {effect = CONST_ME_GROUNDSHAKER, centerRoomPosition = {x=1000,y=1000,z=7}, 
+                                             bossSummonPlace = {x=1000,y=1000,z=7}, bossEffect = CONST_ME_GROUNDSHAKER, 
+                                             sizeRoom = {5,5}}}, 
+                    ['kerberos'] = {beginBossStorageValue = 37, finishedBossStorageValue = 38, points = 5, 
+                                    [5320] = {effect = CONST_ME_FIREAREA, centerRoomPosition = {x=1000,y=1000,z=7}, 
+                                             bossSummonPlace = {x=1000,y=1000,z=7}, bossEffect = CONST_ME_FIREAREA, 
+                                             sizeRoom = {5,5}}}, 
+                    ['ethershrek'] = {beginBossStorageValue = 39, finishedBossStorageValue = 40, points = 5, 
+                                    [5321] = {effect = CONST_ME_MORTAREA, centerRoomPosition = {x=1000,y=1000,z=7}, 
+                                             bossSummonPlace = {x=1000,y=1000,z=7}, bossEffect = CONST_ME_MORTAREA, 
+                                             sizeRoom = {5,5}}} 
+                    } 
+mainStorage = 10001 
+points = 10002 
+bossesStorage = 10003 
+
+function isSummon(cid) 
+    if(not isCreature(cid)) then 
+        return false 
+    end 
+    return getCreatureMaster(cid) ~= cid 
+end 
+]]></config> 
+
+<event type="kill" name="grizzlyKill" event="script"><![CDATA[ 
+domodlib('grizzlyAdams_conf') 
+function onKill(cid, target) 
+if isPlayer(target) or isSummon(target) or isNpc(target) then  
+    return true  
+end 
+for k, v in pairs(task) do 
+    if (v.monsterTypes and v.monsterTypes[getCreatureName(target):lower()]) or k:lower() == getCreatureName(target):lower() then 
+        if getPlayerStorageValue(cid, mainStorage) == v.beginStorageValue then 
+            storages = v.monsterTypes and v.monsterTypes[getCreatureName(target)] or v.storage 
+            if getPlayerStorageValue(cid, storages) <= v.count then 
+                local x, s = 0, 'You killed ' 
+                if v.monsterTypes then 
+                    for monster, storage in pairs(v.monsterTypes) do 
+                        if getPlayerStorageValue(cid, storage) == -1 then 
+                            doPlayerSetStorageValue(cid, storage, 0) 
+                        end 
+                        if monster:lower() == getCreatureName(target):lower() then 
+                            doPlayerSetStorageValue(cid, storage, getPlayerStorageValue(cid, storage) + 1) 
+                        end 
+                        x = x + getPlayerStorageValue(cid, storage) 
+                        s = s .. getPlayerStorageValue(cid, storage) .. ' ' .. monster .. ', ' 
+                    end 
+                else 
+                    doPlayerSetStorageValue(cid, storages, getPlayerStorageValue(cid, storages) + 1) 
+                    s = s .. getPlayerStorageValue(cid, storages) .. ' of ' .. v.count .. ' ' .. k .. '.' 
+                end 
+                s = (x > 0 and (string.sub(s, 1, string.len(s) - 2)..'. You have killed ' .. x ..' of '.. v.count ..' '..k..'.') or s) 
+                doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, s) 
+                if getPlayerStorageValue(cid, storages) == v.count then 
+                    doPlayerSetStorageValue(cid, mainStorage, v.finishStorageValue) 
+                    if v.monsterTypes then 
+                        for monster, storage in pairs(v.monsterTypes) do 
+                            doPlayerSetStorageValue(cid, storage, 0) 
+                        end 
+                    else 
+                        doPlayerSetStorageValue(cid, v.storage, 0) 
+                    end 
+                    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, 'Congratulations! You have killed enough '..(v.monsterTypes and k or getCreatureName(target)..'s')..'.') 
+                    if getPlayerStorageValue(cid, points) < 100 and v.points then 
+                        doPlayerSetStorageValue(cid, points, getPlayerStorageValue(cid, points) + v.points) 
+                        doPlayerSendTextMessage(cid, TALKTYPE_ORANGE_1, 'You gained '..v.points..' points. Your total points is '..getPlayerStorageValue(cid, points)..'.') 
+                    end 
+                end 
+            end 
+        end 
+    end 
+end 
+for k, v in pairs(specialTask) do 
+    if k:lower() == getCreatureName(target):lower() and v.storage and getPlayerStorageValue(cid, v.storage) == v.beginBossStorageValue then 
+        doPlayerSetStorageValue(cid, v.storage, v.finishedBossStorageValue) 
+        doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, 'Congratulations! You have killed '..getCreatureName(target)..'.') 
+    elseif k:lower() == getCreatureName(target):lower() and getPlayerStorageValue(cid, bossesStorage) == v.beginBossStorageValue then 
+        doPlayerSetStorageValue(cid, bossesStorage, v.finishedBossStorageValue) 
+        doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, 'Congratulations! You have killed '..getCreatureName(target)..'.') 
+        if getPlayerStorageValue(cid, points) < 100 and v.points then 
+            doPlayerSetStorageValue(cid, points, getPlayerStorageValue(cid, points) + v.points) 
+            doPlayerSendTextMessage(cid, TALKTYPE_ORANGE_1, 'You gained '..v.points..' points. Your total points is '..getPlayerStorageValue(cid, points)..'.') 
+        end 
+    end 
+end 
+return true 
+end 
+]]></event> 
+
+<moveevent type="stepIn" name="grizzlyAdamsStepIn" fromuid="5300" touid="5321" event="script"><![CDATA[ 
+domodlib('grizzlyAdams_conf') 
+function onStepIn(cid, item, position, lastPosition, fromPosition, toPosition, actor) 
+for k, v in pairs(specialTask) do 
+    if v[item.uid] and isPlayer(cid) then 
+        if getSpectators(v[item.uid].centerRoomPosition, v[item.uid].sizeRoom[1], v[item.uid].sizeRoom[2]) then 
+            for _, target in ipairs(getSpectators(v[item.uid].centerRoomPosition, v[item.uid].sizeRoom[1], v[item.uid].sizeRoom[2])) do 
+                if isPlayer(target) then 
+                    return doTeleportThing(cid, fromPosition, true) and doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, 'Somebody fight with '..k..'!') 
+                elseif isMonster(target) then 
+                    doRemoveThing(target) 
+                end 
+            end 
+        end 
+        if getPlayerStorageValue(cid, bossesStorage) == v.beginBossStorageValue then 
+            doTeleportThing(cid, v[item.uid].centerRoomPosition, true) 
+            doSendMagicEffect(v[item.uid].centerRoomPosition, v[item.uid].effect) 
+            doSendMagicEffect(v[item.uid].bossSummonPlace, v[item.uid].bossEffect) 
+            return doCreateMonster(k, v[item.uid].bossSummonPlace) 
+        end 
+        return doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, 'You can\'t enter here!') 
+    elseif v[item.uid-100] and isPlayer(cid) then 
+        if getSpectators(v[item.uid-100].centerRoomPosition, v[item.uid-100].sizeRoom[1], v[item.uid-100].sizeRoom[2]) then
+            for _, target in ipairs(getSpectators(v[item.uid-100].centerRoomPosition, v[item.uid-100].sizeRoom[1], v[item.uid-100].sizeRoom[2])) do 
+                if isMonster(target) then 
+                    doRemoveThing(target) 
+                end 
+            end 
+        end 
+        return true 
+    end 
+end 
+return true 
+end 
+]]></moveevent> 
+
+<event type="login" name="grizzlyLogin" event="buffer"><![CDATA[ 
+    registerCreatureEvent(cid, 'grizzlyKill') 
+]]></event> 
+</mod>

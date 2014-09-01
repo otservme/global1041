@@ -1,0 +1,106 @@
+---//////////////////////////////////////////----
+Last Used Storage = 50034
+Last Used Aid = 50057
+Last Used Uid = 50034
+---//////////////////////////////////////////----
+---//////////////////Storages////////////////////////----
+stopMove Storage	=		100000 --Reserved to cancel player movement
+---/////////////////////////////////////////////////////////////----
+Default Start Outfits Quest:		12010
+citizen Outfits (Feather Hat):	12011
+citizen Outfits (Backpack):		12012
+Druid Outfits (Bear Fur):		12013
+Druid Outfits (Bear Paws):		12014
+hunter outfit quest storage:	12050-12055
+Knight Outfits storage:			12060
+Knight Sword storage:			12061
+mage/summoner addon (wand):		12062
+mage/summoner addon (tiara/cloak): 	12063
+mage/summoner addon (Fluid Belt):	12064
+Norseman Outfits Quest:			12065
+Wizard Outfits Quest:			12066
+Warrior Shoulder Outfits:		12067
+Warrior Sword Outfits:			12068
+the ancient tombs storage:		12100-12109
+The Ape City storage:			12120-12129
+The New Frontier Quest:			12130-12150
+inquisition storage:			12160-12180
+barbarian test quest:			12190-12199
+ice islands quest storage:		12200-12230
+in service of yalahar storage:		12240-12280
+
+Lugri necromancer task storage: 	50000/50001
+The Pirate Outfits (Sabre): 		50002
+horestisjars (Aid=storage)		50006-50010
+
+
+---/////////////////////Aid/Uid/////////////////////----
+the ancient tombs storage Uid:		12100-12109
+The Ape City Aid/Uid:			12120-12130
+
+horestisjars Aid:			50006-50010
+kazordoonElevatorLever Aid:		50011-50012
+
+Waterfall Quest:                        50022
+Thais Lighthouse Quest Aid:		50023-50026
+
+The Queen of banshee Quest:
+Kiss storage =					50020
+
+First Seal:
+	2 magic wall lever uid:			50000/50001/50002
+	Human dead body "quest" aid/uid:	2000/50003
+	firstSeal FlameTp uid: 			50004
+	firstSeal Flame storage:		50013
+
+Sixth Seal:
+	Switches campfire uid = 		50005-50010
+	secondSeal Flame uid = 			50011
+	secondSeal Flame storage =		50014
+
+Fifth Seal:
+	fifthSeal Flame uid = 			50012
+	fifthSeal storage = 			50015
+	Tiles Path aids =			50014/50015
+
+Fourth Seal:
+	sacrifice tile uid = 			50013
+	fourthSeal Flame uid = 			50014
+	fourthSeal storage =			50016
+
+Third Seal:
+	warlockSummon Tile aid/stor =		50016/50017
+	switchesToAccess uids =			50015-50019
+	thirdSeal Flame uid =			50020
+	thirdSeal storage =			50018
+
+Second Seal:
+	pearlsTeleport aid =			50019
+	secondSeal Flame uid =			50021
+	secondSeal Flame storage =		50019
+
+Last room:
+	doors aid =				50020
+	last door aid =				50021
+	last quest storage =			50021
+	last flame uid =			50022
+
+Triangle Tower lever uid	=	50023
+
+
+Hot Cuisine Quest:
+	Quest Start storage =				50022
+	Dishes Storages =				50023
+	Questlog storage =				50024
+	Door storage/aid =				50028
+	Chest storage/uid =				50029
+
+Thais Exhibition:
+	aid 50030 - 50057
+
+Hellgate exit bridge lever AID 	=	50027
+Vampire Shield Quest storage/uid	=	50030
+Bone Key (3520) storage/uid		=	50031
+Blood Herb quest tree storage/uid	=	50032
+Whisper Moss quest storage/uid		=	50033
+old parchment quest tree storage/uid	=	50034
