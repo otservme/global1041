@@ -64,6 +64,7 @@ mysqlPass = ""
 mysqlDatabase = "forgottenserver"
 mysqlPort = 3306
 mysqlSock = ""
+passwordType = sha1
 
 -- Misc.
 allowChangeOutfit = "yes"
