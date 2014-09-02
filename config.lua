@@ -101,4 +101,4 @@ startupDatabaseOptimization = "no"
 ownerName = ""
 ownerEmail = ""
 url = "http://otland.net/"
-location = "Sweden"i
+location = "Sweden"
