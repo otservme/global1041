@@ -17,7 +17,7 @@ noDamageToSameLookfeet = "no"
 
 -- Connection Config
 -- NOTE: maxPlayers set to 0 means no limit
-ip = "127.0.0.1"
+ip = "0.0.0.0"
 bindOnlyGlobalAddress = "no"
 loginProtocolPort = 7171
 gameProtocolPort = 7172
@@ -59,9 +59,9 @@ maxMarketOffersAtATimePerPlayer = 100
 
 -- MySQL
 mysqlHost = "127.0.0.1"
-mysqlUser = "forgottenserver"
-mysqlPass = ""
-mysqlDatabase = "forgottenserver"
+mysqlUser = "root"
+mysqlPass = "trocar123"
+mysqlDatabase = "global1041"
 mysqlPort = 3306
 mysqlSock = ""
 passwordType = sha1
@@ -101,4 +101,4 @@ startupDatabaseOptimization = "no"
 ownerName = ""
 ownerEmail = ""
 url = "http://otland.net/"
-location = "Sweden"
+location = "Sweden"i
