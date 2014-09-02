@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 02, 2014 at 06:20 AM
+-- Generation Time: Sep 02, 2014 at 06:47 AM
 -- Server version: 5.5.37-0ubuntu0.13.10.1
 -- PHP Version: 5.5.3-1ubuntu2.6
 
@@ -48,14 +48,14 @@ CREATE TABLE IF NOT EXISTS `accounts` (
   `create_ip` int(11) NOT NULL DEFAULT '0',
   `last_post` int(11) NOT NULL DEFAULT '0',
   `flag` varchar(80) NOT NULL DEFAULT ''
-) ENGINE=InnoDB AUTO_INCREMENT=448 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=449 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `accounts`
 --
 
 INSERT INTO `accounts` (`id`, `name`, `password`, `type`, `premdays`, `lastday`, `email`, `creation`, `key`, `email_new`, `email_new_time`, `rlname`, `location`, `page_access`, `email_code`, `next_email`, `premium_points`, `create_date`, `create_ip`, `last_post`, `flag`) VALUES
-(1, '1', 'e0f68134d29dc326d115de4c8fab8700a3c4b002', 5, 0, 0, '70428@gmail.com', 1402322190, '', '', 0, '', '', 3, '', 0, 0, 0, 2147483647, 0, 'unknown');
+(1, '1', 'e0f68134d29dc326d115de4c8fab8700a3c4b002', 1, 0, 0, '70428@gmail.com', 1402322190, '', '', 0, '', '', 3, '', 0, 0, 0, 2147483647, 0, 'unknown');
 
 -- --------------------------------------------------------
 
@@ -116,7 +116,7 @@ CREATE TABLE IF NOT EXISTS `guilds` (
   `guild_logo` mediumblob,
   `create_ip` int(11) NOT NULL DEFAULT '0',
   `balance` bigint(20) unsigned NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 --
 -- Triggers `guilds`
@@ -182,7 +182,7 @@ CREATE TABLE IF NOT EXISTS `guild_ranks` (
   `guild_id` int(11) NOT NULL COMMENT 'guild',
   `name` varchar(255) NOT NULL COMMENT 'rank name',
   `level` int(11) NOT NULL COMMENT 'rank level - leader, vice, member, maybe something else'
-) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -1295,7 +1295,7 @@ CREATE TABLE IF NOT EXISTS `market_history` (
   `expires_at` bigint(20) unsigned NOT NULL,
   `inserted` bigint(20) unsigned NOT NULL,
   `state` tinyint(1) unsigned NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -1312,7 +1312,7 @@ CREATE TABLE IF NOT EXISTS `market_offers` (
   `created` bigint(20) unsigned NOT NULL,
   `anonymous` tinyint(1) NOT NULL DEFAULT '0',
   `price` int(10) unsigned NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -1384,7 +1384,7 @@ CREATE TABLE IF NOT EXISTS `players` (
   `cast` tinyint(1) NOT NULL DEFAULT '0',
   `castViewers` tinyint(1) NOT NULL DEFAULT '0',
   `castDescription` int(11) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=520 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=524 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `players`
@@ -1396,7 +1396,7 @@ INSERT INTO `players` (`id`, `name`, `group_id`, `account_id`, `level`, `vocatio
 (3, 'Sorcerer Sample', 1, 1, 8, 1, 185, 185, 4200, 44, 98, 15, 76, 128, 0, 0, 35, 35, 0, 100, 1, 0, 0, 0, '', 420, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 43200, -1, 2520, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 0, '', '', 0, 0, 0, 0, 0, 0),
 (4, 'Druid Sample', 1, 1, 8, 2, 185, 185, 4200, 44, 98, 15, 76, 128, 0, 0, 35, 35, 0, 100, 1, 0, 0, 0, '', 420, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 43200, -1, 2520, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 0, '', '', 0, 0, 0, 0, 0, 0),
 (5, 'Paladin Sample', 1, 1, 8, 3, 185, 185, 4200, 44, 98, 15, 76, 128, 0, 0, 35, 35, 0, 100, 1, 0, 0, 0, '', 420, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 43200, -1, 2520, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 0, '', '', 0, 0, 0, 0, 0, 0),
-(6, 'Knight Sample', 1, 1, 8, 4, 185, 185, 4200, 44, 98, 15, 76, 136, 0, 0, 35, 35, 0, 100, 1, 32957, 32076, 7, '', 420, 0, 1409638807, 1619868861, 1, 0, 0, 1409638810, 0, 3, 0, 0, 43200, -1, 2520, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 0, '', '', 0, 0, 0, 0, 0, 0);
+(6, 'Knight Sample', 1, 1, 8, 4, 185, 185, 4200, 44, 98, 15, 76, 128, 0, 0, 35, 35, 0, 100, 1, 0, 0, 0, '', 420, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 43200, -1, 2520, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 0, '', '', 0, 0, 0, 0, 0, 0);
 
 --
 -- Triggers `players`
@@ -1418,13 +1418,6 @@ DELIMITER ;
 CREATE TABLE IF NOT EXISTS `players_online` (
   `player_id` int(11) NOT NULL
 ) ENGINE=MEMORY DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `players_online`
---
-
-INSERT INTO `players_online` (`player_id`) VALUES
-(1);
 
 -- --------------------------------------------------------
 
@@ -1489,24 +1482,6 @@ CREATE TABLE IF NOT EXISTS `player_items` (
   `attributes` blob NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `player_items`
---
-
-INSERT INTO `player_items` (`player_id`, `pid`, `sid`, `itemtype`, `count`, `attributes`) VALUES
-(6, 1, 101, 2460, 1, ''),
-(6, 2, 102, 2661, 1, ''),
-(6, 3, 103, 1988, 1, ''),
-(6, 4, 104, 2465, 1, ''),
-(6, 5, 105, 2525, 1, ''),
-(6, 6, 106, 8601, 1, ''),
-(6, 7, 107, 2478, 1, ''),
-(6, 8, 108, 2643, 1, ''),
-(6, 103, 109, 2554, 1, ''),
-(6, 103, 110, 2120, 1, ''),
-(6, 103, 111, 2439, 1, ''),
-(6, 103, 112, 8602, 1, '');
-
 -- --------------------------------------------------------
 
 --
@@ -1543,13 +1518,6 @@ CREATE TABLE IF NOT EXISTS `player_storage` (
   `value` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `player_storage`
---
-
-INSERT INTO `player_storage` (`player_id`, `key`, `value`) VALUES
-(6, 100000, 0);
-
 -- --------------------------------------------------------
 
 --
@@ -1585,6 +1553,35 @@ CREATE TABLE IF NOT EXISTS `tile_store` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `z_featured_article`
+--
+
+CREATE TABLE IF NOT EXISTS `z_featured_article` (
+`id` int(11) NOT NULL,
+  `title` varchar(50) NOT NULL,
+  `text` varchar(255) NOT NULL,
+  `date` varchar(30) NOT NULL,
+  `author` varchar(50) NOT NULL,
+  `read_more` varchar(100) NOT NULL
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `z_featured_article`
+--
+
+INSERT INTO `z_featured_article` (`id`, `title`, `text`, `date`, `author`, `read_more`) VALUES
+(1, 'Teste', '', '1404310665', 'Teste', 'teste'),
+(2, 'Novidades', '<p>Update em breve</p>', '1404320741', 'Teste', 'www.facebook.com'),
+(3, 'Bem vindo', '<p>TEstando com o Alex vamos que vamos</p>', '1404324978', 'Teste', 'index.php?subtopic=forum'),
+(4, 'Teste', '<p>teste aqui posta e aparece la compre no shop</p>', '1404327252', 'Teste', 'index.php?subtopic=shopsystem'),
+(5, 'Welcome', '<center><strong><span style="color: white; font-size: xx-small;">| IP:&nbsp;<span style="color: #0099ff;">hardcore-global.com</span>&nbsp;/ Port:&nbsp;<span style="color: #0099ff;">7171</span>&nbsp;/ Client:&nbsp;<span style="color: #0099ff;">10.41</span>', '1404327664', 'Teste', 'http://localhost/'),
+(6, '', '<center><strong><span style="color: white; font-size: xx-small;" data-mce-mark="1">| </span><span style="text-decoration: line-through;"><span style="color: white; font-size: xx-small; text-decoration: line-through;" data-mce-mark="1">IP</span></span><spa', '1404327728', 'Teste', 'http://localhost/'),
+(7, 'Teste', '<p>teste</p>', '1404327743', 'Teste', 'teste'),
+(8, 'Novo', '<p>teste novoa aqki mesmo site ficando bom</p>', '1404402200', 'Teste', 'index.php?subtopic=shopsystem');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `z_forum`
 --
 
@@ -1603,8 +1600,71 @@ CREATE TABLE IF NOT EXISTS `z_forum` (
   `post_date` int(20) NOT NULL DEFAULT '0',
   `last_edit_aid` int(20) NOT NULL DEFAULT '0',
   `edit_date` int(20) NOT NULL DEFAULT '0',
-  `post_ip` varchar(15) NOT NULL DEFAULT '0.0.0.0'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `post_ip` varchar(15) NOT NULL DEFAULT '0.0.0.0',
+  `icon_id` tinyint(4) NOT NULL DEFAULT '1',
+  `post_icon_id` tinyint(10) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `z_forum`
+--
+
+INSERT INTO `z_forum` (`id`, `first_post`, `last_post`, `section`, `replies`, `views`, `author_aid`, `author_guid`, `post_text`, `post_topic`, `post_smile`, `post_date`, `last_edit_aid`, `edit_date`, `post_ip`, `icon_id`, `post_icon_id`) VALUES
+(19, 19, 1404317870, 1, 0, 0, 448, 520, '<p>Baixaki e pros fracos</p>', 'Facebook', 0, 1404317870, 0, 0, '127.0.0.1', 0, 0),
+(20, 20, 1404318004, 1, 0, 0, 448, 520, '<p>Teste</p>', 'Vamos', 0, 1404318004, 0, 0, '127.0.0.1', 0, 0),
+(21, 21, 1404320692, 1, 0, 0, 448, 520, '<p>Nossa senhora que site lindo</p>', 'Olalaa', 0, 1404320692, 0, 0, '127.0.0.1', 0, 0),
+(22, 22, 1404325124, 1, 0, 2, 448, 520, 'Alex esse e o site finalizado.', 'Alex', 0, 1404325124, 448, 1404325146, '127.0.0.1', 0, 0),
+(23, 23, 1404325157, 1, 0, 0, 448, 520, '<p>Alex</p>', 'Alex', 0, 1404325157, 0, 0, '127.0.0.1', 0, 0),
+(24, 24, 1404327148, 1, 0, 0, 448, 520, '<p>Allaannn</p>', 'Allan', 0, 1404327148, 0, 0, '127.0.0.1', 0, 0),
+(25, 25, 1404402118, 1, 0, 0, 448, 520, '<p>Tio teste</p>', 'Teste', 0, 1404402118, 0, 0, '127.0.0.1', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `z_network_box`
+--
+
+CREATE TABLE IF NOT EXISTS `z_network_box` (
+`id` int(11) NOT NULL,
+  `network_name` varchar(10) NOT NULL,
+  `network_link` varchar(50) NOT NULL
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `z_network_box`
+--
+
+INSERT INTO `z_network_box` (`id`, `network_name`, `network_link`) VALUES
+(1, 'facebook', 'tibia'),
+(2, 'twitter', 'warglobal');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `z_news_tickers`
+--
+
+CREATE TABLE IF NOT EXISTS `z_news_tickers` (
+  `date` int(11) NOT NULL DEFAULT '1',
+  `author` int(11) NOT NULL,
+  `image_id` int(3) NOT NULL DEFAULT '0',
+  `text` text NOT NULL,
+  `hide_ticker` tinyint(1) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `z_news_tickers`
+--
+
+INSERT INTO `z_news_tickers` (`date`, `author`, `image_id`, `text`, `hide_ticker`) VALUES
+(1404305931, 1, 0, 'teste', 1),
+(1404307538, 448, 0, 'teste', 0),
+(1404307594, 448, 0, 'teste', 0),
+(1404310545, 448, 0, 'asdasdsad', 0),
+(1404320838, 448, 0, 'Bem vindo so otss', 0),
+(1404324997, 448, 0, 'esasd a4sd615612as d', 0),
+(1404327133, 448, 0, 'tstes', 0),
+(1404402125, 448, 0, 'rteste', 0);
 
 -- --------------------------------------------------------
 
@@ -1625,7 +1685,52 @@ CREATE TABLE IF NOT EXISTS `z_ots_comunication` (
   `param6` varchar(255) NOT NULL,
   `param7` varchar(255) NOT NULL,
   `delete_it` int(2) NOT NULL DEFAULT '1'
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `z_polls`
+--
+
+CREATE TABLE IF NOT EXISTS `z_polls` (
+`id` int(11) NOT NULL,
+  `question` varchar(255) NOT NULL,
+  `end` int(11) NOT NULL,
+  `start` int(11) NOT NULL,
+  `answers` int(11) NOT NULL,
+  `votes_all` int(11) NOT NULL
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `z_polls`
+--
+
+INSERT INTO `z_polls` (`id`, `question`, `end`, `start`, `answers`, `votes_all`) VALUES
+(1, 'Teste', 1404586405, 1404327205, 2, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `z_polls_answers`
+--
+
+CREATE TABLE IF NOT EXISTS `z_polls_answers` (
+  `poll_id` int(11) NOT NULL,
+  `answer_id` int(11) NOT NULL,
+  `answer` varchar(255) NOT NULL,
+  `votes` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `z_polls_answers`
+--
+
+INSERT INTO `z_polls_answers` (`poll_id`, `answer_id`, `answer`, `votes`) VALUES
+(1, 1, 'sim', 0),
+(1, 2, 'nao', 0),
+(1, 1, 'sim', 0),
+(1, 2, 'nao', 0);
 
 -- --------------------------------------------------------
 
@@ -1661,88 +1766,16 @@ CREATE TABLE IF NOT EXISTS `z_shop_offer` (
   `count2` int(11) NOT NULL DEFAULT '0',
   `offer_type` varchar(255) DEFAULT NULL,
   `offer_description` text NOT NULL,
-  `offer_name` varchar(255) NOT NULL,
-  `pid` int(11) NOT NULL DEFAULT '0'
-) ENGINE=MyISAM AUTO_INCREMENT=82 DEFAULT CHARSET=latin1;
+  `offer_name` varchar(255) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `z_shop_offer`
 --
 
-INSERT INTO `z_shop_offer` (`id`, `points`, `itemid1`, `count1`, `itemid2`, `count2`, `offer_type`, `offer_description`, `offer_name`, `pid`) VALUES
-(2, 4, 12649, 1, 0, 0, 'item', 'Blade of Corruption', 'Blade of Corruption', 0),
-(3, 4, 2160, 100, 0, 0, 'item', '100 Crystal Coin', '100 Crystal Coin', 0),
-(4, 5, 8927, 1, 0, 0, 'item', 'Dark Trinity Mace', 'Dark Trinity Mace', 0),
-(5, 4, 2494, 1, 0, 0, 'item', 'Demon Armor', 'Demon Armor', 0),
-(6, 4, 2495, 1, 0, 0, 'item', 'Demon Legs', 'Demon Legs', 0),
-(7, 8, 15410, 1, 0, 0, 'item', 'Depth Calcei', 'Depth Calcei', 0),
-(8, 8, 15408, 1, 0, 0, 'item', 'Depth Galea', 'Depth Galea', 0),
-(9, 8, 15407, 1, 0, 0, 'item', 'Depth Lorica', 'Depth Lorica', 0),
-(10, 8, 15409, 1, 0, 0, 'item', 'Depth Ocrea', 'Depth Ocrea', 0),
-(11, 6, 15411, 1, 0, 0, 'item', 'Depth Scutum', 'Depth Scutum', 0),
-(12, 2, 2472, 1, 0, 0, 'item', 'Magic Plate Armor', 'Magic Plate Armor', 0),
-(13, 4, 2646, 1, 0, 0, 'item', 'Golden Boots', 'Golden Boots', 0),
-(14, 8, 2471, 1, 0, 0, 'item', 'Golden Helmet', 'Golden Helmet', 0),
-(15, 4, 12642, 4, 0, 0, 'item', 'Royal Draken Mail', 'Royal Draken Mail', 0),
-(16, 4, 12643, 1, 0, 0, 'item', 'Royal Scale Robe', 'Royal Scale Robe', 0),
-(17, 4, 12645, 1, 0, 0, 'item', 'Elite Draken Helmet', 'Elite Draken Helmet', 0),
-(18, 5, 18465, 1, 0, 0, 'item', 'Shiny Blade', 'Shiny Blade', 0),
-(19, 5, 8884, 1, 0, 0, 'item', 'Oceanborn Leviathan Armor', 'Oceanborn Leviathan Armor', 0),
-(20, 5, 8882, 1, 0, 0, 'item', 'Earthborn Titan Armor', 'Earthborn Titan Armor', 0),
-(21, 5, 8883, 1, 0, 0, 'item', 'Windborn Colossus Armor', 'Windborn Colossus Armor', 0),
-(22, 7, 2640, 1, 0, 0, 'item', 'Soft Boots', 'Soft Boots', 0),
-(23, 5, 8878, 1, 0, 0, 'item', 'Crystalline Armor', 'Crystalline Armor', 0),
-(24, 5, 8888, 1, 0, 0, 'item', 'Master Archer''s Armor', 'Master Archer''s Armor', 0),
-(25, 5, 18452, 1, 0, 0, 'item', 'Mycological Mace', 'Mycological Mace', 0),
-(26, 5, 8851, 1, 0, 0, 'item', 'Royal Crossbow', 'Royal Crossbow', 0),
-(27, 5, 22398, 1, 0, 0, 'item', 'Crude Umbral Blade', 'Crude Umbral Blade', 0),
-(28, 7, 22399, 1, 0, 0, 'item', 'Umbral Blade', 'Umbral Blade', 0),
-(29, 10, 22400, 1, 0, 0, 'item', 'Umbral Masterblade', 'Umbral Masterblade', 0),
-(30, 3, 22401, 1, 0, 0, 'item', 'Crude Umbral Slayer', 'Crude Umbral Slayer', 0),
-(31, 5, 22402, 1, 0, 0, 'item', 'Umbral Slayer', 'Umbral Slayer', 0),
-(32, 10, 22403, 1, 0, 0, 'item', 'Umbral Master Slayer', 'Umbral Master Slayer', 0),
-(33, 5, 22404, 1, 0, 0, 'item', 'Crude Umbral Axe', 'Crude Umbral Axe', 0),
-(34, 7, 22405, 1, 0, 0, 'item', 'Umbral Axe', 'Umbral Axe', 0),
-(35, 10, 22406, 1, 0, 0, 'item', 'Umbral Master Axe', 'Umbral Master Axe', 0),
-(36, 3, 22407, 1, 0, 0, 'item', 'Crude Umbral Chopper', 'Crude Umbral Chopper', 0),
-(37, 5, 22408, 1, 0, 0, 'item', 'Umbral Chopper', 'Umbral Chopper', 0),
-(38, 8, 22409, 1, 0, 0, 'item', 'Umbral Master Chopper', 'Umbral Master Chopper', 0),
-(39, 5, 22410, 1, 0, 0, 'item', 'Crude Umbral Mace', 'Crude Umbral Mace', 0),
-(40, 7, 22411, 1, 0, 0, 'item', 'Umbral Mace', 'Umbral Mace', 0),
-(41, 10, 22412, 1, 0, 0, 'item', 'Umbral Master Mace', 'Umbral Master Mace', 0),
-(42, 3, 22413, 1, 0, 0, 'item', 'Crude Umbral Hammer', 'Crude Umbral Hammer', 0),
-(43, 5, 22414, 1, 0, 0, 'item', 'Umbral Hammer', 'Umbral Hammer', 0),
-(44, 8, 22415, 1, 0, 0, 'item', 'Umbral Master Hammer', 'Umbral Master Hammer', 0),
-(45, 3, 22416, 1, 0, 0, 'item', 'Crude Umbral Bow', 'Crude Umbral Bow', 0),
-(46, 5, 22417, 1, 0, 0, 'item', 'Umbral Bow', 'Umbral Bow', 0),
-(47, 10, 22418, 1, 0, 0, 'item', 'Umbral Master Bow', 'Umbral Master Bow', 0),
-(48, 3, 22419, 1, 0, 0, 'item', 'Crude Umbral Crossbow', 'Crude Umbral Crossbow', 0),
-(49, 5, 22420, 1, 0, 0, 'item', 'Umbral Crossbow', 'Umbral Crossbow', 0),
-(50, 10, 22421, 1, 0, 0, 'item', 'Umbral Master Crossbow', 'Umbral Master Crossbow', 0),
-(51, 3, 22422, 1, 0, 0, 'item', 'Crude Umbral Spellbook', 'Crude Umbral Spellbook', 0),
-(52, 5, 22423, 1, 0, 0, 'item', 'Umbral Spellbook', 'Umbral Spellbook', 0),
-(53, 10, 22424, 1, 0, 0, 'item', 'Umbral Master Spellbook', 'Umbral Master Spellbook', 0),
-(54, 7, 16111, 1, 0, 0, 'item', 'Thorn Spitter', 'Thorn Spitter', 0),
-(55, 10, 2523, 1, 0, 0, 'item', 'Blessed Shield', 'Blessed Shield', 0),
-(56, 5, 12644, 1, 0, 0, 'item', 'Shield of Corruption', 'Shield of Corruption', 0),
-(57, 4, 15413, 1, 0, 0, 'item', 'Ornate Shield', 'Ornate Shield', 0),
-(58, 5, 6391, 1, 0, 0, 'item', 'Nightmare Shield', 'Nightmare Shield', 0),
-(59, 6, 6433, 1, 0, 0, 'item', 'Necromancer Shield', 'Necromancer Shield', 0),
-(60, 6, 18410, 1, 0, 0, 'item', 'Prismatic Shield', 'Prismatic Shield', 0),
-(61, 5, 8918, 1, 0, 0, 'item', 'Spellbook of Dark Mysteries', 'Spellbook of Dark Mysteries', 0),
-(62, 7, 18422, 20, 0, 0, 'item', '20x Minor Crystalline Token', '20x Minor Crystalline Token', 0),
-(63, 10, 18423, 20, 0, 0, 'item', '20x Major Crystalline Token', '20x Major Crystalline Token', 0),
-(64, 7, 8925, 1, 0, 0, 'item', 'Solar Axe', 'Solar Axe', 0),
-(65, 4, 9777, 1, 0, 0, 'item', 'Yalahari Legs Piece', 'Yalahari Legs Piece', 0),
-(66, 4, 9776, 1, 0, 0, 'item', 'Yalahari Armor', 'Yalahari Armor', 0),
-(67, 4, 9778, 1, 0, 0, 'item', 'Yalahari Mask', 'Yalahari Mask', 0),
-(68, 4, 10146, 10, 0, 0, 'item', '10 Blood Herb', '10 Blood Herb', 0),
-(70, 8, 2504, 1, 0, 0, 'item', 'Dwarven Legs', 'Dwarven Legs', 0),
-(71, 8, 2503, 1, 0, 0, 'item', 'Dwarven Armor', 'Dwarven Armor', 0),
-(78, 5, 2366, 1, 0, 0, 'item', '1x Stamina Refill', '1x Stamina Refill', 0),
-(79, 30, 16101, 1, 0, 0, 'item', 'vale 30 pontos.', 'Premium Scroll', 0),
-(80, 30, 9693, 1, 0, 0, 'item', '1x Addon Doll use !addon nameofaddon', '1x Addon Doll', 0),
-(81, 20, 9019, 1, 0, 0, 'item', '1x Mount Doll use !mount nameofmount', '1x Mount Doll', 0);
+INSERT INTO `z_shop_offer` (`id`, `points`, `itemid1`, `count1`, `itemid2`, `count2`, `offer_type`, `offer_description`, `offer_name`) VALUES
+(1, 20, 2453, 1, 0, 0, 'item', 'Arrow para paladin', 'Arrow'),
+(2, 20, 2160, 100, 0, 0, 'item', 'teste', 'teste');
 
 --
 -- Indexes for dumped tables
@@ -1905,15 +1938,33 @@ ALTER TABLE `tile_store`
  ADD KEY `house_id` (`house_id`);
 
 --
+-- Indexes for table `z_featured_article`
+--
+ALTER TABLE `z_featured_article`
+ ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `z_forum`
 --
 ALTER TABLE `z_forum`
  ADD PRIMARY KEY (`id`), ADD KEY `section` (`section`);
 
 --
+-- Indexes for table `z_network_box`
+--
+ALTER TABLE `z_network_box`
+ ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `z_ots_comunication`
 --
 ALTER TABLE `z_ots_comunication`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `z_polls`
+--
+ALTER TABLE `z_polls`
  ADD PRIMARY KEY (`id`);
 
 --
@@ -1936,7 +1987,7 @@ ALTER TABLE `z_shop_offer`
 -- AUTO_INCREMENT for table `accounts`
 --
 ALTER TABLE `accounts`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=448;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=449;
 --
 -- AUTO_INCREMENT for table `account_ban_history`
 --
@@ -1946,7 +1997,7 @@ MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `guilds`
 --
 ALTER TABLE `guilds`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `guildwar_kills`
 --
@@ -1956,7 +2007,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `guild_ranks`
 --
 ALTER TABLE `guild_ranks`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=40;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `guild_wars`
 --
@@ -1971,27 +2022,42 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2423;
 -- AUTO_INCREMENT for table `market_history`
 --
 ALTER TABLE `market_history`
-MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `market_offers`
 --
 ALTER TABLE `market_offers`
-MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `players`
 --
 ALTER TABLE `players`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=520;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=524;
+--
+-- AUTO_INCREMENT for table `z_featured_article`
+--
+ALTER TABLE `z_featured_article`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `z_forum`
 --
 ALTER TABLE `z_forum`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=26;
+--
+-- AUTO_INCREMENT for table `z_network_box`
+--
+ALTER TABLE `z_network_box`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `z_ots_comunication`
 --
 ALTER TABLE `z_ots_comunication`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `z_polls`
+--
+ALTER TABLE `z_polls`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `z_shop_history_item`
 --
@@ -2001,7 +2067,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `z_shop_offer`
 --
 ALTER TABLE `z_shop_offer`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=82;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- Constraints for dumped tables
 --
